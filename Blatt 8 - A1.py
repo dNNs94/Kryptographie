@@ -16,7 +16,11 @@ def multiplikativeInverse(a, b):
         return x % b
 
 
-print("Größter gemeinsamer Teiler: " + str(erweiterterEuklid(a, b)))
-print("Multiplikatives Inverses: " + str(multiplikativeInverse(a, b)))
-print("Probe ergibt ggT: " + str((multiplikativeInverse(a, b) * a) % b))
+ggTprint = erweiterterEuklid(a, b)
+multInv = multiplikativeInverse(a, b)
+probe = (multiplikativeInverse(a, b) * a) % b
+
+print("Größter gemeinsamer Teiler: " + str(ggTprint))
+print("Multiplikatives Inverses: " + str(multInv))
+print("Probe ergibt ggT: " + str(probe))
 
